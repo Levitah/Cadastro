@@ -12,8 +12,32 @@
     tools:context="br.com.trainning.cadastro.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:inputType="textPersonName"
+        android:hint="Nome"
+        android:ems="10"
+        android:id="@+id/editTextNome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Idade"
+        android:id="@+id/editTextIdade"
+        android:layout_below="@+id/editTextNome"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextNome" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Telefone"
+        android:id="@+id/editTextTelefone"
+        android:layout_below="@+id/editTextIdade"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextIdade" />
 </RelativeLayout>
